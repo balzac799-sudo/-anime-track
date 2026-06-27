@@ -1,0 +1,6 @@
+{
+  "name": "Anime and Manhwa Tracker",
+  "description": "A progression, rating, and review tracker for anime and manhwa enthusiasts, custom-built for Angarag-Erdene.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
