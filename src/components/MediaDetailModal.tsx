@@ -136,7 +136,7 @@ export default function MediaDetailModal({
           <div className="md:col-span-4 flex flex-col gap-4">
             <div className="aspect-[4/5] w-full overflow-hidden border-2 border-black bg-neutral-100">
               <img
-                src={coverUrl}
+                src={coverUrl && coverUrl.trim() !== "" ? coverUrl : null}
                 alt={title}
                 referrerPolicy="no-referrer"
                 className="h-full w-full object-cover animate-fade-in"
