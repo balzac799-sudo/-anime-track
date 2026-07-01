@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "emojis": "🏴‍☠️🍖👒",
+    "answer": "One Piece",
+    "answers": ["one piece", "onepiece", "ван пийс", "ван пис", "луффи", "luffy", "monkey d luffy"],
+    "options": ["One Piece", "Naruto", "Bleach", "Dragon Ball"],
+    "character": "Monkey D. Luffy",
+    "characterDescription": "The optimistic captain of the Straw Hat Pirates who gained elastic powers after eating a Gum-Gum Fruit. He dreams of finding the ultimate treasure, One Piece, and becoming King of the Pirates!",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJdzguYJu2D5aKnSpOCXTIh5zu8Y6iSAuzVGrliZ_rMQ&s=10",
+    "video": "https://www.youtube.com/embed/S8_YwFLCh4Y"
+  },
+  {
+    "id": 2,
+    "emojis": "🦊🍜🍥",
+    "answer": "Naruto",
+    "answers": ["naruto", "наруто", "naruto shippuden", "shippuden", "узумаки", "uzumaki"],
+    "options": ["Hunter x Hunter", "Naruto", "My Hero Academia", "Jujutsu Kaisen"],
+    "character": "Naruto Uzumaki",
+    "characterDescription": "A boisterous, hyperactive ninja of Konohagakure who carries the Nine-Tailed Demon Fox inside him. Through sheer perseverance, he strives to gain the village's acknowledgment and become Hokage.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSItRnrkgoxPK95_g0qbzjjQ2JTnlYlyLtlYSbL854IiA&s=10",
+    "video": "https://www.youtube.com/embed/QczGoNoa-O0"
+  },
+  {
+    "id": 3,
+    "emojis": "⚔️🌊👹🐗",
+    "answer": "Demon Slayer",
+    "answers": ["demon slayer", "kimetsu no yaiba", "клинок рассекающий демонов", "клинок", "танжиро", "tanjiro", "kamado"],
+    "options": ["Demon Slayer", "Inuyasha", "Dororo", "Attack on Titan"],
+    "character": "Tanjiro Kamado",
+    "characterDescription": "A kind-hearted boy who joins the Demon Slayer Corps to hunt down the monster who slaughtered his family, and to find a cure for his sister Nezuko, who was turned into a demon.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYQs-4EXAz6_Tnk48YiBZaFQ-uBwr8DZ1YumDQfpZZqw&s=10",
+    "video": "https://www.youtube.com/embed/VQGCKyvzIM4"
+  },
+  {
+    "id": 4,
+    "emojis": "🧱🧗👹🗡️",
+    "answer": "Attack on Titan",
+    "answers": ["attack on titan", "shingeki no kyojin", "атака титанов", "атака титана", "эрен", "eren", "yeager"],
+    "options": ["My Hero Academia", "Sword Art Online", "Attack on Titan", "Neon Genesis Evangelion"],
+    "character": "Eren Yeager",
+    "characterDescription": "A former member of the Scout Regiment who vowed to wipe out every single Titan after witnessing his mother's death. He holds the power of multiple coordinate Titan forms.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQigobSp1b1DRmp6xeC4hcycUCRnUXcP3XQTxdkHxd14w&s=10",
+    "video": "https://www.youtube.com/embed/MGRm4IzK1SQ"
+  },
+  {
+    "id": 5,
+    "emojis": "📓🍎✍️💀",
+    "answer": "Death Note",
+    "answers": ["death note", "тетрадь смерти", "deathnote", "лайт", "light", "yagami", "l"],
+    "options": ["Code Geass", "Death Note", "Monster", "Tokyo Ghoul"],
+    "character": "Light Yagami",
+    "characterDescription": "A brilliant high school student who discovers a supernatural notebook that allows him to kill anyone by writing their name. He attempts to create a crime-free utopia under the alias 'Kira'.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAJkAZpPRi0XAAG0yor1zC1T_fE_9St2QS_0NSvYYE-A&s=10",
+    "video": "https://www.youtube.com/embed/N3iF0S0S0Ss"
+  },
+  {
+    "id": 6,
+    "emojis": "🥦🦸‍♂️🏫💥",
+    "answer": "My Hero Academia",
+    "answers": ["my hero academia", "boku no hero academia", "моя геройская академия", "mha", "деку", "deku", "izuku", "midoriya"],
+    "options": ["Black Clover", "My Hero Academia", "One Punch Man", "Fire Force"],
+    "character": "Izuku Midoriya (Deku)",
+    "characterDescription": "Born without powers in a world where almost everyone has them, his passion and heroic heart earn him the attention of the legendary hero All Might, who passes down the 'One For All' quirk.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkmxuHuZmMIZur-QvBggyE7TXVjqe89DgNvdDg9CCRKw&s=10",
+    "video": "https://www.youtube.com/embed/D5fYOnwYtj4"
+  },
+  {
+    "id": 7,
+    "emojis": "🤞👁️😈🏫",
+    "answer": "Jujutsu Kaisen",
+    "answers": ["jujutsu kaisen", "jjk", "магическая битва", "итадори", "yuji", "itadori", "gojo"],
+    "options": ["Jujutsu Kaisen", "Chainsaw Man", "Bleach", "Blue Exorcist"],
+    "character": "Yuji Itadori",
+    "characterDescription": "A high school student with remarkable physical talents who swallows a rotten finger containing a legendary curse, Ryomen Sukuna, becoming his vessel and joining Jujutsu High.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBeI3IbLGI9XbLem8wJsGYZzjOFP1qRaIj7LfPdlvj6A&s",
+    "video": "https://www.youtube.com/embed/g6z2f4mP0tE"
+  },
+  {
+    "id": 8,
+    "emojis": "🐉🟠💇‍♂️🥋",
+    "answer": "Dragon Ball",
+    "answers": ["dragon ball", "dragonball", "драгонболл", "драгон болл", "dbz", "гоку", "goku", "son goku"],
+    "options": ["One Punch Man", "Hunter x Hunter", "Dragon Ball", "Naruto"],
+    "character": "Son Goku",
+    "characterDescription": "An alien Saiyan sent to Earth as an infant who becomes its greatest defender. He loves martial arts, constant self-improvement, and reaching legendary forms like Super Saiyan and Ultra Instinct.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw6zkFNDp9uNoMkvYgb8nlxAq3hogMF2t8pgxOVYqYaA&s=10",
+    "video": "https://www.youtube.com/embed/gLSTN9y5E9g"
+  },
+  {
+    "id": 9,
+    "emojis": "🦾🦿🧑‍🔬🪙",
+    "answer": "Fullmetal Alchemist",
+    "answers": ["fullmetal alchemist", "fma", "fmah", "стальной алхимик", "алхимик", "эдвард", "edward", "elric"],
+    "options": ["Fullmetal Alchemist", "Steins;Gate", "Soul Eater", "Fairy Tail"],
+    "character": "Edward Elric",
+    "characterDescription": "The youngest State Alchemist in history who lost his right arm and left leg during a failed transmutational attempt to resurrect his deceased mother. He searches for the Philosopher's Stone.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE-9jOxwc9V_lil_WCq7JaZNjqecg-ADF-hXwO80w4kQ&s=10",
+    "video": "https://www.youtube.com/embed/cqX4Hbe64zM"
+  },
+  {
+    "id": 10,
+    "emojis": "🪚🐕😈👔",
+    "answer": "Chainsaw Man",
+    "answers": ["chainsaw man", "chainsawman", "человек бензопила", "человек-бензопила", "денджи", "denji"],
+    "options": ["Chainsaw Man", "Dorohedoro", "Devilman Crybaby", "Parasyte"],
+    "character": "Denji",
+    "characterDescription": "A desperate young man living in extreme poverty who fuses with his chainsaw-devil dog Pochita. He joins the Public Safety Devil Hunters in exchange for food, shelter, and a normal life.",
+    "image": "hhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQYV8RdIX8qpW7ThDzRX1dzcUjrnP4-28IB6QvcAgCGQ&s=10",
+    "video": "https://www.youtube.com/embed/JK8_n-uT0O0"
+  }
+]

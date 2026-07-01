@@ -1,5 +1,6 @@
 import express from "express";
 import path from "path";
+import fs from "fs";
 import { createServer as createViteServer } from "vite";
 import { GoogleGenAI } from "@google/genai";
 import dotenv from "dotenv";
@@ -145,6 +146,23 @@ app.post("/api/chat-me", async (req, res) => {
       error: "Холболт амжилтгүй боллоо. API түлхүүр тохируулагдсан эсэхийг шалгана уу.",
       details: error.message,
     });
+  }
+});
+
+// API endpoint for Anime Guesser questions
+app.get("/api/questions", (req, res) => {
+  try {
+    const dataPath = path.join(process.cwd(), "data.json");
+    if (fs.existsSync(dataPath)) {
+      const rawData = fs.readFileSync(dataPath, "utf8");
+      const questions = JSON.parse(rawData);
+      return res.json(questions);
+    } else {
+      return res.status(404).json({ error: "Questions data file not found." });
+    }
+  } catch (error: any) {
+    console.error("Error reading questions data:", error);
+    return res.status(500).json({ error: "Failed to read questions." });
   }
 });
 

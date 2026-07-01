@@ -12,6 +12,7 @@ import MediaDetailModal from './components/MediaDetailModal';
 import AddMediaModal from './components/AddMediaModal';
 import IdolChatSection from './components/IdolChatSection';
 import MeAiPopup from './components/MeAiPopup';
+import AnimeGuesserSection from './components/AnimeGuesserSection';
 import { 
   Plus, 
   Search, 
@@ -27,7 +28,8 @@ import {
   ChevronDown,
   LogOut,
   Info,
-  MessageSquare
+  MessageSquare,
+  Gamepad2
 } from 'lucide-react';
 
 const LOCAL_STORAGE_KEY = 'ANGARAG_ANIME_MANHWA_TRACKS_V1';
@@ -35,7 +37,7 @@ const LOCAL_STORAGE_KEY = 'ANGARAG_ANIME_MANHWA_TRACKS_V1';
 export default function App() {
   // --- States ---
   const [entries, setEntries] = useState<MediaEntry[]>([]);
-  const [viewMode, setViewMode] = useState<'tracker' | 'idol'>('tracker');
+  const [viewMode, setViewMode] = useState<'tracker' | 'idol' | 'guesser'>('tracker');
   const [activeTab, setActiveTab] = useState<'all' | 'anime' | 'manhwa'>('all');
   const [searchQuery, setSearchQuery] = useState('');
   const [statusFilter, setStatusFilter] = useState<string>('all');
@@ -293,7 +295,7 @@ export default function App() {
 
       {/* Primary Section Switcher */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6">
-        <div className="flex border-2 border-black bg-white p-1 shadow-[4px_4px_0px_#000000]">
+        <div className="flex flex-col sm:flex-row border-2 border-black bg-white p-1 shadow-[4px_4px_0px_#000000] gap-1">
           <button
             id="nav-view-tracker"
             onClick={() => setViewMode('tracker')}
@@ -318,6 +320,21 @@ export default function App() {
             <span>🤖 My Idol</span>
             <span className="absolute -top-1 -right-1 bg-rose-500 text-white text-[8px] font-black uppercase px-2 py-1 rotate-12 animate-pulse border border-black shadow-[1px_1px_0px_#000000]">
               Idol Coach
+            </span>
+          </button>
+          <button
+            id="nav-view-guesser"
+            onClick={() => setViewMode('guesser')}
+            className={`flex-1 flex items-center justify-center gap-2 py-3 text-xs font-black uppercase tracking-wider font-mono transition-all cursor-pointer relative overflow-hidden ${
+              viewMode === 'guesser'
+                ? 'bg-amber-500 text-black border-2 border-black sm:border-0'
+                : 'bg-white text-neutral-600 hover:text-amber-600 hover:bg-neutral-50'
+            }`}
+          >
+            <Gamepad2 className="h-4 w-4" />
+            <span>🎮 Anime Guesser</span>
+            <span className="absolute -top-1 -right-1 bg-emerald-500 text-white text-[8px] font-black uppercase px-2 py-1 rotate-12 animate-pulse border border-black shadow-[1px_1px_0px_#000000]">
+              NEW GAME
             </span>
           </button>
         </div>
@@ -593,7 +610,7 @@ export default function App() {
 
           </main>
         </>
-      ) : (
+      ) : viewMode === 'idol' ? (
         <>
           {/* Hero Intro for Idol AI */}
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-3">
@@ -607,6 +624,22 @@ export default function App() {
 
           <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
             <IdolChatSection />
+          </main>
+        </>
+      ) : (
+        <>
+          {/* Hero Intro for Anime Guesser */}
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-3">
+            <h2 className="text-2xl md:text-3xl font-black italic font-serif tracking-tight text-[#1A1A1A]">
+              Interactive Game Station // Anime Guesser
+            </h2>
+            <p className="text-xs text-neutral-600 font-medium font-sans mt-1">
+              Test your knowledge of emoji combinations, score points, and explore the multimedia trailers.
+            </p>
+          </div>
+
+          <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+            <AnimeGuesserSection />
           </main>
         </>
       )}
